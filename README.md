@@ -14,47 +14,47 @@ Antes de executar o projeto, certifique-se de que você tenha o seguinte instala
 
 ## Como executar
 1. Clone este repositório para o seu ambiente local:
-``bash
+```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
-``
+```
 2. Navegue até o diretório do projeto:
-``bash
+```bash
 cd seu-repositorio
-``
+```
 3. Compile o projeto:
 ```bash
 javac -d bin src/model/Hero.java src/Main.java
-``
+```
 4. Execute o programa:
-``bash
+```bash
 java -cp bin Main
-``
+```
 5. O programa solicitará as seguintes entradas:
    - Nome do herói
    - Idade do herói
    - Tipo do herói (warrior, wizard, monk, ninja)
 
 6. Exemplo de execução:
-``bash
+```bash
 Digite o nome do herói: Enzo
 Digite a idade do herói: 6
 Digite o tipo do herói (warrior, wizard, monk, ninja): warrior
-``
+```
 
 Saída esperada:
-``bash
+```bash
 The hero Enzo, who is 6 years old, is a warrior. He/She attacked with sword.
-``
+```
 
 ## Estrutura do Projeto
-``bash
+```bash
 ├── src
 │   ├── model
 │   │   └── Hero.java # Classe que define o herói
 │   └── Main.java     # Classe principal que executa o programa
 ├── bin               # Diretório onde os arquivos compilados são armazenados
 └── README.md         # Documentação do projeto
-``
+```
 
 ## Classe `Hero`
 A classe `Hero` contém os seguintes atributos e métodos:
