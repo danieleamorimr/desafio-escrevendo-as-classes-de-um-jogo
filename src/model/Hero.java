@@ -1,5 +1,7 @@
 package model;
 
+import java.util.InputMismatchException;
+
 public class Hero {
 
     private String name;
@@ -7,10 +9,11 @@ public class Hero {
     private String type;
     private String attack;
 
-    public Hero(String name, Integer age, String type) throws Exception {
+    public Hero(String name, Integer age, String type) throws InputMismatchException {
         this.name = name;
         this.age = age;
         this.type = type;
+
         switch (type) {
             case ("warrior"):
                 attack = "sword";
@@ -25,7 +28,7 @@ public class Hero {
                 attack = "shuriken";
                 break;
             default:
-                throw new Exception("Invalid warrior.");
+                throw new InputMismatchException("Invalid warrior.");
         }
 
     }

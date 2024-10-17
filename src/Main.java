@@ -1,4 +1,6 @@
 import model.Hero;
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -19,9 +21,13 @@ public class Main {
             Hero hero = new Hero(name, age, type);
 
             hero.attack();
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+
+        }
+        catch (Exception e) {
+           System.out.println("Ocorreu um erro: " + e.getMessage());
+            
         } finally {
+            System.out.println("FIM");
             scanner.close();
         }
     }
