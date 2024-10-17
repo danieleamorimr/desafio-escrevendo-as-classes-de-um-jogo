@@ -4,9 +4,9 @@ Este projeto é uma simulação simples de um herói que realiza um ataque, com 
 
 ## Como desenvolvi o projeto
 
-Criei uma classe pública chamada "Hero", dentro do pacote MODEL. Nela criei os atributos necessários para definir as características da classe `Hero`. Optei pelo modificador de acesso "private" para que as informações fiquem encapsuladas e, desta forma, não seja possível ter acesso direto a essas variáveis de fora da classe.
+Criei uma classe pública chamada `Hero`, dentro do pacote `model`. Nela criei os atributos necessários para definir as características da classe `Hero`. Optei pelo modificador de acesso `private` para que as informações fiquem encapsuladas e não seja possível ter acesso direto a essas variáveis de fora da classe.
 
-Depois, criei o construtor da classe definindo suas propriedades, evitando que o objeto seja criado com atributos nulos. Optei por desenvolver um `Switch Case` (ferramenta de controle de fluxo) para atribuir o valor a propriedade `attack` , variando o `case` de acordo com o tipo de ataque utilizado pelo Herói.
+Depois, criei o construtor da classe definindo suas propriedades, evitando que o objeto seja criado com atributos **nulos**. Optei por desenvolver um `Switch Case` (ferramenta de controle de fluxo) para atribuir o valor a propriedade `attack` , variando o `case` de acordo com o tipo de ataque utilizado pelo Herói.
 
 Por fim, criei um método para imprimir na tela concatenando um texto com os atributos definidos para o objeto Hero no método construtor como abaixo:
 
